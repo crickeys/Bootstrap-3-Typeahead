@@ -57,6 +57,7 @@
           .val(this.updater(val))
           .change();
       }
+      this.$element.trigger("typeahead:selected");
       return this.hide();
     }
 
